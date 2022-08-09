@@ -1,6 +1,26 @@
 #include "main.h"
 
 /**
+ * _strcmp - Compares two strings.
+ * @s1: First string
+ * @s2: Second string
+ *
+ * Return: 0 if similar, positive number if s1 > s2, otherwise negative number
+ */
+int _strcmp(const char *s1, const char *s2)
+{
+	int i;
+
+	for (i = 0; s1[i] != '\0'; i++)
+	{
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
+	}
+
+	return (0);
+}
+
+/**
  * _get_printer - checks for a registered printer for a given specifier
  * @specifier: the specifier to get a printer for
  *
@@ -34,7 +54,7 @@ printer _get_printer(const char *specifier)
 		 * one character long. This needs to be updated to
 		 * support specifiers containing more chatacters
 		 */
-		if (*specifier == *(printers[i].specifier))
+		if (_strcmp(printers[i].specifier, specifier) == 0)
 			break;
 	}
 
