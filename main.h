@@ -23,5 +23,8 @@ int _print_str(va_list);
 int _print_decimal(va_list);
 int _print_int(va_list);
 int _print_binary(va_list);
+int _print_str_nonprintable(va_list);
+int _print_str_reverse(va_list);
+int _print_rot13(va_list);
 
 #endif /* MAIN_H */
