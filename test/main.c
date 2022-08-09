@@ -30,8 +30,9 @@ int main(void)
     printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
     _printf("Character:[%c], %c\n", 72, NULL);
     printf("Character:[%c], %c\n", 72, NULL);
-    _printf("String:[%s%c%%], %s\n", "I am a string !", 'A', NULL);
-    printf("String:[%s%c%%], %s\n", "I am a string !", 'A', NULL);
+   	int l1 = _printf("%s\n", NULL);
+    int l2 = printf("%s\n", NULL);
+	printf("custom: %d, standard: %d\n", l1, l2);
     _printf("Address:[%p]\n", addr);
     printf("Address:[%p]\n", addr);
     len = _printf("Percent:[%%%]\n");
@@ -40,5 +41,7 @@ int main(void)
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n");
     printf("Unknown:[%r]\n");
+	_printf("%\n");
+	printf("%\n");
     return (0);
 }

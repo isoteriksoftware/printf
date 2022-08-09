@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 		}
 
 		if (!format[i])
-			break;
+			return (characters_printed);
 
 		printer = _get_printer(&format[i + 1]);
 		if (printer.specifier != NULL)
@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 		}
 
 		if (!format[i + 1])
-			break;
+			return (characters_printed);
 
 		_putchar(format[i]);
 		characters_printed++;
