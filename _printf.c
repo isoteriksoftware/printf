@@ -15,7 +15,6 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-
 	va_start(args, format);
 	while (format[i])
 	{
@@ -47,7 +46,6 @@ int _printf(const char *format, ...)
 		else
 			i++;
 	}
-
 	va_end(args);
 	return (characters_printed);
 }
