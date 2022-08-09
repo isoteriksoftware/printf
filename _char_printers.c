@@ -22,6 +22,7 @@ int _print_str(va_list args)
 {
 	int count;
 	char *str = va_arg(args, char *);
+
 	if (str == NULL)
 		str = "(null)";
 	for (count = 0; str[count]; count++)
