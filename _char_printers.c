@@ -33,19 +33,18 @@ int _print_str(va_list args)
 	}
 	return (count);
 }
-
-
 /**
- * _print_str_nonprintable - prints a string and nonprintable character ascii values
+ * _print_str_nonprintable - prints a string and nonprintable
+ * character ascii values
  * @args: arguments list
  *
  * Return: number of chars printed
  */
-int _print_str_nonprintable (va_list S)
+int _print_str_nonprintable(va_list args)
 {
 	unsigned int i;
 	int count = 0;
-	char *str = va_arg(S, char *);
+	char *str = va_arg(args, char *);
 
 	if (str == NULL)
 		str = "(null)";
