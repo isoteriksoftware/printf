@@ -21,6 +21,7 @@ printer _get_printer(const char *specifier)
 		{"R", _print_rot13},
 		{"u", _print_uint},
 		{"o", _print_octal},
+		{"x", _print_hex_lower},
 		{NULL, NULL}
 	};
 
