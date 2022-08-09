@@ -23,10 +23,10 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 			characters_printed++;
 		}
-
 		if (!format[i])
 			return (characters_printed);
-
+		if (format[i] == '%' && _strlen(format) == 1)
+			return (-1);
 		printer = _get_printer(&format[i + 1]);
 		if (printer.specifier != NULL)
 		{
