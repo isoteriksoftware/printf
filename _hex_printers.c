@@ -51,3 +51,15 @@ int _print_hex_lower(va_list args)
 {
 	return (print_hex(va_arg(args, unsigned int), 0));
 }
+
+/**
+ * _print_hex_upper - takes an unsigned int and prints it in
+ * uppercase hex notation
+ * @args: arguments
+ *
+ * Return: number of digits printed
+ */
+int _print_hex_upper(va_list args)
+{
+	return (print_hex(va_arg(args, unsigned int), 1));
+}

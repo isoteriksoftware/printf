@@ -29,5 +29,6 @@ int _print_rot13(va_list);
 int _print_uint(va_list);
 int _print_octal(va_list);
 int _print_hex_lower(va_list);
+int _print_hex_upper(va_list);v
 
 #endif /* MAIN_H */
