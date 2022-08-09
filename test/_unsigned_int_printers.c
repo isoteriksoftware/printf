@@ -1,20 +1,12 @@
 #include "main.h"
 
 /**
-<<<<<<< HEAD
  * _print_binary - takes an unsigned int and prints it in binary notation
-=======
- * print_binary - takes an unsigned int and prints it in binary notation
->>>>>>> tobi
  * @args: arguments list
  *
  * Return: number of characters printed
  */
-<<<<<<< HEAD
 int _print_binary(va_list args)
-=======
-int print_binary(va_list args)
->>>>>>> tobi
 {
 	unsigned int n, m, i, sum;
 	unsigned int a[32];
