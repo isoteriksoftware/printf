@@ -28,10 +28,10 @@ int main(void)
     printf("Unsigned octal:[%o]\n", ui);
     _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
     printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-    _printf("Character:[%c]\n", 72);
-    printf("Character:[%c]\n", 72);
-    _printf("String:[%s%c%%]\n", "I am a string !", 'A');
-    printf("String:[%s%c%%]\n", "I am a string !", 'A');
+    _printf("Character:[%c], %c\n", 72, NULL);
+    printf("Character:[%c], %c\n", 72, NULL);
+    _printf("String:[%s%c%%], %s\n", "I am a string !", 'A', NULL);
+    printf("String:[%s%c%%], %s\n", "I am a string !", 'A', NULL);
     _printf("Address:[%p]\n", addr);
     printf("Address:[%p]\n", addr);
     len = _printf("Percent:[%%%]\n");
