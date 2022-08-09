@@ -27,5 +27,6 @@ int _print_str_nonprintable(va_list);
 int _print_str_reverse(va_list);
 int _print_rot13(va_list);
 int _print_uint(va_list);
+int _print_octal(va_list);
 
 #endif /* MAIN_H */
