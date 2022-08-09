@@ -15,6 +15,7 @@ printer _get_printer(const char *specifier)
 		{"s", _print_str},
 		{"d", _print_decimal},
 		{"i", _print_int},
+		{"b", _print_binary},
 		{NULL, NULL}
 	};
 
