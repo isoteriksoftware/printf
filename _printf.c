@@ -33,6 +33,9 @@ int _printf(const char *format, ...)
 			continue;
 		}
 
+		if (!format[i + 1])
+			break;
+
 		_putchar(format[i]);
 		characters_printed++;
 
