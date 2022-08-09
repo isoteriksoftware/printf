@@ -23,6 +23,7 @@ printer _get_printer(const char *specifier)
 		{"o", _print_octal},
 		{"x", _print_hex_lower},
 		{"X", _print_hex_upper},
+		{"p", _print_pointer},
 		{NULL, NULL}
 	};
 
